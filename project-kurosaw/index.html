@@ -15,30 +15,34 @@
 
 <body>
     <header>
-        <div class="container-fluid bg-light">
-            <nav>
-                <div class="row p-3">
-                    <div class="col-2 d-flex justify-content-center align-items-center">
-                        <h2 text->Kurosaw</h2>
+        <div class="container-fluid bg-light position-relative">
+            <video class="position-absolute top-0 start-0 w-100 h-100" autoplay loop muted>
+                <source src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <nav class="row p-3">
+                <div class="col-2 d-flex justify-content-center align-items-center">
+                    <h2>Kurosaw</h2>
+                </div>
+                <div class="col-2 d-flex justify-content-center align-items-center">
+                    <a href="#" class="text-decoration-none text-black mx-2">Home</a>
+                    <a href="#" class="text-decoration-none text-black mx-2">Catalog</a>
+                    <a href="#" class="text-decoration-none text-black mx-2">News</a>
+                    <a href="#" class="text-decoration-none text-black mx-2">Collections</a>
+                </div>
+                <div class="col-5 d-flex">
+                    <div class="col-12 mx-4 d-flex align-items-center ">
+                        <div class="input-group d-flex align-items-center justify-content-center">
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default" placeholder="Search" style="padding: 10px;">
+                        </div>
                     </div>
-                    <div class="col-2 d-flex justify-content-center align-items-center">
-                            <a href="#" class="text-decoration-none text-black mx-2">Home</a>
-                            <a href="#" class="text-decoration-none text-black mx-2">Catalog</a>
-                            <a href="#" class="text-decoration-none text-black mx-2">News</a>
-                            <a href="#" class="text-decoration-none text-black mx-2">Collections</a>
-                    </div>
-                    <div class="col-5 d-flex">
-                        <div class="col-12 mx-4 d-flex align-items-center ">
-                            <div class="input-group d-flex align-items-center justify-content-center">
-                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Search" style="padding: 10px;">
-                              </div>                    
-                        </div>                     
-                    </div>
-                    <div class="col-3 d-flex justify-content-center align-items-center">
-                        <button type="button" class="btn border rounded-end" style="padding: 10px 20px;">Log In</button>
-                        &nbsp;&nbsp;
-                        <button type="button" class="btn btn border rounded-end" style="padding: 10px 30px;">Get started</button>
-                    </div>
+                </div>
+                <div class="col-3 d-flex justify-content-center align-items-center">
+                    <button type="button" class="btn border rounded-end" style="padding: 10px 20px;">Log In</button>
+                    &nbsp;&nbsp;
+                    <button type="button" class="btn btn border rounded-end" style="padding: 10px 30px;">Get
+                        started</button>
                 </div>
             </nav>
         </div>
