@@ -7,3 +7,41 @@ video {
     object-fit: cover; /* Ensure the video covers the entire container */
     z-index: -1; /* Put the video behind other content */
 }
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75vh; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 0; 
+}
+
+.card-carousel,
+.cont,
+header {
+    position: relative;
+    z-index: 1; 
+}
+
+.next,
+.prev {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.card-carousel:hover .prev,
+.card-carousel:hover .next {
+    transition: opacity 1s ease;
+    opacity: 1;
+}
+
+.bg-color {
+    position: absolute;
+    top: 12vh;
+    left: 0;
+    width: 100%;
+    height: 77%;
+    z-index: -1; 
+}
