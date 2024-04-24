@@ -2,27 +2,39 @@
 const cardData = [
     {
         img: "example-img/dungeon-meshi.jpg",
-        text: "Text 1"
+        name: "Delicious in Dungeon",
+        release: 2024,
+        genre: "Adventure"
     },
     {
         img: "example-img/kaiju-no-8.jpg",
-        text: "Text 2"
+        name: "Kaiju No. 8",
+        release: 2024,
+        genre: "Action"
     },
     {
         img: "example-img/wind-braker.jpg",
-        text: "Text 3"
+        name: "Wind Breaker",
+        release: 2024,
+        genre: "Action"
     },
     {
         img: "example-img/example-4.jpg",
-        text: "Text 4"
+        name: "Magic Mashle",
+        release: 2024,
+        genre: "Adventure"
     },
     {
         img: "example-img/example-5.jpg",
-        text: "Text 5"
+        name: "Red Monster",
+        release: 2024,
+        genre: "Adventure"
     },
     {
         img: "example-img/example-6.jpg",
-        text: "Text 6"
+        name: "Ninja Kamui",
+        release: 2024,
+        genre: "Action"
     }
 ];
 
@@ -36,10 +48,10 @@ const numRows = Math.ceil(totalCards / cardsPerRow);
 // Function to generate card HTML from object data
 function generateCardHtml(card) {
     return `
-        <div class="card">
+        <div class="card position-relative">
             <img src="${card.img}" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">${card.text}</p>
+            <div class="card-overlay mesh-overlay" style="font-size:13px;">
+                <p class="card-text">${card.name} <br> ${card.release}, ${card.genre}</p>
             </div>
         </div>
     `;
