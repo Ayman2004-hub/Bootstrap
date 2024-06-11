@@ -288,7 +288,10 @@
     <div class="container-fluid special-team" id="team">
         <div class="row">
             <div class="col-12 p-4">
-
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>
             </div>
         </div>
         <div class="row">
@@ -917,31 +920,33 @@
                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                         <div class="col-md-6 col-sm-12 p-3">
-                            <div class="input-group input-group-sm mb-3">
-                                <input type="text" class="form-control" placeholder="Your Name"
-                                    aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-                            </div>
-
-                            <div class="input-group input-group-sm mb-3">
-                                <input type="text" class="form-control" placeholder="Your Email"
-                                    aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-                            </div>
-
-                            <div class="input-group input-group-sm mb-3">
-                                <input type="text" class="form-control" placeholder="Subject"
-                                    aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-                            </div>
-                            <div class="form-floating">
-                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                                    style="height: 100px"></textarea>
-                                <label for="floatingTextarea2">Message</label>
-                            </div>
-                            <div class="cont p-3">
-                                <button type="button"
-                                    style="padding: 10px 20px; border-radius: 20px; font-size: 12px; border: 1px solid gray;"
-                                    class="btn btn-white text-secondary-emphasis mx-auto d-flex justify-content-center align-items-center">SEND
-                                    MESSAGE</button>
-                            </div>
+                            <form action="">
+                                <div class="input-group input-group-sm mb-3">
+                                    <input type="text" class="form-control" placeholder="Your Name"
+                                        aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" required>
+                                </div>
+    
+                                <div class="input-group input-group-sm mb-3">
+                                    <input type="email" class="form-control" placeholder="Your Email"
+                                        aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" required>
+                                </div>
+    
+                                <div class="input-group input-group-sm mb-3">
+                                    <input type="text" class="form-control" placeholder="Subject"
+                                        aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" required>
+                                </div>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                        style="height: 100px" required></textarea>
+                                    <label for="floatingTextarea2">Message</label>
+                                </div>
+                                <div class="cont p-3">
+                                    <button type="submit"
+                                        style="padding: 10px 20px; border-radius: 20px; font-size: 12px; border: 1px solid gray;"
+                                        class="btn btn-white text-secondary-emphasis mx-auto d-flex justify-content-center align-items-center">SEND
+                                        MESSAGE</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
